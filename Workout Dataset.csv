@@ -1,0 +1,343 @@
+﻿Gender,Age,Height,Weight in Kg,Weight in lb,Exercise type,No.of calories burnt per 30 minutes
+Female,2,85.5,12.02,26.5,"bicycling, general",15
+Female,2,85.5,12.02,26.5,"walking, for pleasure",9
+Female,2,85.5,12.02,26.5,"jogging, general",15
+Female,2,85.5,12.02,26.5,"running, 4 mph (15 min/mile)",12
+Female,2,85.5,12.02,26.5,"swimming, general",15
+Female,2,85.5,12.02,26.5,"rope skipping, general",27
+Female,2,85.5,12.02,26.5,"badminton, general",12
+Female,2,85.5,12.02,26.5,cricket,9
+Female,2,85.5,12.02,26.5,tennis,15
+Female,3,94,14.29,31.5,"bicycling, general",21
+Female,3,94,14.29,31.5,"walking, for pleasure",9
+Female,3,94,14.29,31.5,"jogging, general",21
+Female,3,94,14.29,31.5,"running, 4 mph (15 min/mile)",18
+Female,3,94,14.29,31.5,"swimming, general",39
+Female,3,94,14.29,31.5,"rope skipping, general",36
+Female,3,94,14.29,31.5,"badminton, general",15
+Female,3,94,14.29,31.5,cricket,15
+Female,3,94,14.29,31.5,tennis,21
+Female,4,100.3,15.42,34,"bicycling, general",24
+Female,4,100.3,15.42,34,"walking, for pleasure",12
+Female,4,100.3,15.42,34,"jogging, general",24
+Female,4,100.3,15.42,34,"running, 4 mph (15 min/mile)",18
+Female,4,100.3,15.42,34,"swimming, general",45
+Female,4,100.3,15.42,34,"rope skipping, general",39
+Female,4,100.3,15.42,34,"badminton, general",18
+Female,4,100.3,15.42,34,cricket,15
+Female,4,100.3,15.42,34,tennis,24
+Female,5,107.9,17.92,39.5,"bicycling, general",30
+Female,5,107.9,17.92,39.5,"walking, for pleasure",15
+Female,5,107.9,17.92,39.5,"jogging, general",30
+Female,5,107.9,17.92,39.5,"running, 4 mph (15 min/mile)",24
+Female,5,107.9,17.92,39.5,"swimming, general",57
+Female,5,107.9,17.92,39.5,"rope skipping, general",51
+Female,5,107.9,17.92,39.5,"badminton, general",24
+Female,5,107.9,17.92,39.5,cricket,21
+Female,5,107.9,17.92,39.5,tennis,30
+Female,6,115.5,19.96,44,"bicycling, general",42
+Female,6,115.5,19.96,44,"walking, for pleasure",18
+Female,6,115.5,19.96,44,"jogging, general",36
+Female,6,115.5,19.96,44,"running, 4 mph (15 min/mile)",30
+Female,6,115.5,19.96,44,"swimming, general",69
+Female,6,115.5,19.96,44,"rope skipping, general",63
+Female,6,115.5,19.96,44,"badminton, general",27
+Female,6,115.5,19.96,44,cricket,24
+Female,6,115.5,19.96,44,tennis,39
+Female,7,121.1,22.45,49.5,"bicycling, general",54
+Female,7,121.1,22.45,49.5,"walking, for pleasure",21
+Female,7,121.1,22.45,49.5,"jogging, general",45
+Female,7,121.1,22.45,49.5,"running, 4 mph (15 min/mile)",39
+Female,7,121.1,22.45,49.5,"swimming, general",87
+Female,7,121.1,22.45,49.5,"rope skipping, general",78
+Female,7,121.1,22.45,49.5,"badminton, general",33
+Female,7,121.1,22.45,49.5,cricket,30
+Female,7,121.1,22.45,49.5,tennis,45
+Female,8,128.2,25.85,57,"bicycling, general",69
+Female,8,128.2,25.85,57,"walking, for pleasure",27
+Female,8,128.2,25.85,57,"jogging, general",57
+Female,8,128.2,25.85,57,"running, 4 mph (15 min/mile)",48
+Female,8,128.2,25.85,57,"swimming, general",111
+Female,8,128.2,25.85,57,"rope skipping, general",99
+Female,8,128.2,25.85,57,"badminton, general",45
+Female,8,128.2,25.85,57,cricket,39
+Female,8,128.2,25.85,57,tennis,57
+Female,9,133.3,28.12,62,"bicycling, general",69
+Female,9,133.3,28.12,62,"walking, for pleasure",33
+Female,9,133.3,28.12,62,"jogging, general",66
+Female,9,133.3,28.12,62,"running, 4 mph (15 min/mile)",57
+Female,9,133.3,28.12,62,"swimming, general",129
+Female,9,133.3,28.12,62,"rope skipping, general",114
+Female,9,133.3,28.12,62,"badminton, general",51
+Female,9,133.3,28.12,62,cricket,45
+Female,9,133.3,28.12,62,tennis,69
+Female,10,138.4,31.98,70.5,"bicycling, general",87
+Female,10,138.4,31.98,70.5,"walking, for pleasure",39
+Female,10,138.4,31.98,70.5,"jogging, general",81
+Female,10,138.4,31.98,70.5,"running, 4 mph (15 min/mile)",69
+Female,10,138.4,31.98,70.5,"swimming, general",159
+Female,10,138.4,31.98,70.5,"rope skipping, general",144
+Female,10,138.4,31.98,70.5,"badminton, general",63
+Female,10,138.4,31.98,70.5,cricket,54
+Female,10,138.4,31.98,70.5,tennis,84
+Female,11,144,36.97,81.5,"bicycling, general",111
+Female,11,144,36.97,81.5,"walking, for pleasure",51
+Female,11,144,36.97,81.5,"jogging, general",102
+Female,11,144,36.97,81.5,"running, 4 mph (15 min/mile)",90
+Female,11,144,36.97,81.5,"swimming, general",204
+Female,11,144,36.97,81.5,"rope skipping, general",183
+Female,11,144,36.97,81.5,"badminton, general",81
+Female,11,144,36.97,81.5,cricket,72
+Female,11,144,36.97,81.5,tennis,108
+Female,12,149.8,41.5,91.5,"bicycling, general",135
+Female,12,149.8,41.5,91.5,"walking, for pleasure",63
+Female,12,149.8,41.5,91.5,"jogging, general",126
+Female,12,149.8,41.5,91.5,"running, 4 mph (15 min/mile)",108
+Female,12,149.8,41.5,91.5,"swimming, general",246
+Female,12,149.8,41.5,91.5,"rope skipping, general",219
+Female,12,149.8,41.5,91.5,"badminton, general",99
+Female,12,149.8,41.5,91.5,cricket,84
+Female,12,149.8,41.5,91.5,tennis,132
+Female,13,156.7,45.81,101,"bicycling, general",156
+Female,13,156.7,45.81,101,"walking, for pleasure",75
+Female,13,156.7,45.81,101,"jogging, general",147
+Female,13,156.7,45.81,101,"running, 4 mph (15 min/mile)",126
+Female,13,156.7,45.81,101,"swimming, general",288
+Female,13,156.7,45.81,101,"rope skipping, general",258
+Female,13,156.7,45.81,101,"badminton, general",114
+Female,13,156.7,45.81,101,cricket,102
+Female,13,156.7,45.81,101,tennis,153
+Female,14,158.7,47.63,105,"bicycling, general",168
+Female,14,158.7,47.63,105,"walking, for pleasure",78
+Female,14,158.7,47.63,105,"jogging, general",159
+Female,14,158.7,47.63,105,"running, 4 mph (15 min/mile)",135
+Female,14,158.7,47.63,105,"swimming, general",309
+Female,14,158.7,47.63,105,"rope skipping, general",276
+Female,14,158.7,47.63,105,"badminton, general",123
+Female,14,158.7,47.63,105,cricket,108
+Female,14,158.7,47.63,105,tennis,162
+Female,15,159.7,52.16,115,"bicycling, general",195
+Female,15,159.7,52.16,115,"walking, for pleasure",90
+Female,15,159.7,52.16,115,"jogging, general",183
+Female,15,159.7,52.16,115,"running, 4 mph (15 min/mile)",156
+Female,15,159.7,52.16,115,"swimming, general",360
+Female,15,159.7,52.16,115,"rope skipping, general",321
+Female,15,159.7,52.16,115,"badminton, general",141
+Female,15,159.7,52.16,115,cricket,126
+Female,15,159.7,52.16,115,tennis,192
+Female,16,162.5,53.52,118,"bicycling, general",204
+Female,16,162.5,53.52,118,"walking, for pleasure",96
+Female,16,162.5,53.52,118,"jogging, general",192
+Female,16,162.5,53.52,118,"running, 4 mph (15 min/mile)",162
+Female,16,162.5,53.52,118,"swimming, general",378
+Female,16,162.5,53.52,118,"rope skipping, general",333
+Female,16,162.5,53.52,118,"badminton, general",150
+Female,16,162.5,53.52,118,cricket,129
+Female,16,162.5,53.52,118,tennis,198
+Female,17,162.5,54.43,120,"bicycling, general",210
+Female,17,162.5,54.43,120,"walking, for pleasure",96
+Female,17,162.5,54.43,120,"jogging, general",198
+Female,17,162.5,54.43,120,"running, 4 mph (15 min/mile)",168
+Female,17,162.5,54.43,120,"swimming, general",390
+Female,17,162.5,54.43,120,"rope skipping, general",345
+Female,17,162.5,54.43,120,"badminton, general",153
+Female,17,162.5,54.43,120,cricket,135
+Female,17,162.5,54.43,120,tennis,207
+Female,18,163,56.7,125,"bicycling, general",225
+Female,18,163,56.7,125,"walking, for pleasure",105
+Female,18,163,56.7,125,"jogging, general",210
+Female,18,163,56.7,125,"running, 4 mph (15 min/mile)",183
+Female,18,163,56.7,125,"swimming, general",414
+Female,18,163,56.7,125,"rope skipping, general",369
+Female,18,163,56.7,125,"badminton, general",168
+Female,18,163,56.7,125,cricket,144
+Female,18,163,56.7,125,tennis,219
+Female,19,163,57.15,126,"bicycling, general",228
+Female,19,163,57.15,126,"walking, for pleasure",108
+Female,19,163,57.15,126,"jogging, general",213
+Female,19,163,57.15,126,"running, 4 mph (15 min/mile)",183
+Female,19,163,57.15,126,"swimming, general",423
+Female,19,163,57.15,126,"rope skipping, general",375
+Female,19,163,57.15,126,"badminton, general",168
+Female,19,163,57.15,126,cricket,147
+Female,19,163,57.15,126,tennis,222
+Female,20,163.3,58.06,128,"bicycling, general",234
+Female,20,163.3,58.06,128,"walking, for pleasure",111
+Female,20,163.3,58.06,128,"jogging, general",219
+Female,20,163.3,58.06,128,"running, 4 mph (15 min/mile)",189
+Female,20,163.3,58.06,128,"swimming, general",432
+Female,20,163.3,58.06,128,"rope skipping, general",387
+Female,20,163.3,58.06,128,"badminton, general",174
+Female,20,163.3,58.06,128,cricket,150
+Female,20,163.3,58.06,128,tennis,228
+Male,2,86.8,12.47,27.5,"bicycling, general",24
+Male,2,86.8,12.47,27.5,"walking, for pleasure",12
+Male,2,86.8,12.47,27.5,"jogging, general",21
+Male,2,86.8,12.47,27.5,"running, 4 mph (15 min/mile)",18
+Male,2,86.8,12.47,27.5,"swimming, general",42
+Male,2,86.8,12.47,27.5,"rope skipping, general",39
+Male,2,86.8,12.47,27.5,"badminton, general",18
+Male,2,86.8,12.47,27.5,cricket,15
+Male,2,86.8,12.47,27.5,tennis,24
+Male,3,95.2,14.06,31,"bicycling, general",27
+Male,3,95.2,14.06,31,"walking, for pleasure",12
+Male,3,95.2,14.06,31,"jogging, general",27
+Male,3,95.2,14.06,31,"running, 4 mph (15 min/mile)",21
+Male,3,95.2,14.06,31,"swimming, general",51
+Male,3,95.2,14.06,31,"rope skipping, general",45
+Male,3,95.2,14.06,31,"badminton, general",21
+Male,3,95.2,14.06,31,cricket,18
+Male,3,95.2,14.06,31,tennis,27
+Male,4,102.3,16.33,36,"bicycling, general",33
+Male,4,102.3,16.33,36,"walking, for pleasure",15
+Male,4,102.3,16.33,36,"jogging, general",33
+Male,4,102.3,16.33,36,"running, 4 mph (15 min/mile)",27
+Male,4,102.3,16.33,36,"swimming, general",63
+Male,4,102.3,16.33,36,"rope skipping, general",57
+Male,4,102.3,16.33,36,"badminton, general",24
+Male,4,102.3,16.33,36,cricket,21
+Male,4,102.3,16.33,36,tennis,33
+Male,5,109.2,18.37,40.5,"bicycling, general",42
+Male,5,109.2,18.37,40.5,"walking, for pleasure",18
+Male,5,109.2,18.37,40.5,"jogging, general",39
+Male,5,109.2,18.37,40.5,"running, 4 mph (15 min/mile)",33
+Male,5,109.2,18.37,40.5,"swimming, general",75
+Male,5,109.2,18.37,40.5,"rope skipping, general",66
+Male,5,109.2,18.37,40.5,"badminton, general",30
+Male,5,109.2,18.37,40.5,cricket,27
+Male,5,109.2,18.37,40.5,tennis,39
+Male,6,115.5,20.64,45.5,"bicycling, general",48
+Male,6,115.5,20.64,45.5,"walking, for pleasure",24
+Male,6,115.5,20.64,45.5,"jogging, general",45
+Male,6,115.5,20.64,45.5,"running, 4 mph (15 min/mile)",39
+Male,6,115.5,20.64,45.5,"swimming, general",87
+Male,6,115.5,20.64,45.5,"rope skipping, general",78
+Male,6,115.5,20.64,45.5,"badminton, general",36
+Male,6,115.5,20.64,45.5,cricket,30
+Male,6,115.5,20.64,45.5,tennis,48
+Male,7,121.9,22.9,50.5,"bicycling, general",54
+Male,7,121.9,22.9,50.5,"walking, for pleasure",24
+Male,7,121.9,22.9,50.5,"jogging, general",51
+Male,7,121.9,22.9,50.5,"running, 4 mph (15 min/mile)",45
+Male,7,121.9,22.9,50.5,"swimming, general",102
+Male,7,121.9,22.9,50.5,"rope skipping, general",90
+Male,7,121.9,22.9,50.5,"badminton, general",42
+Male,7,121.9,22.9,50.5,cricket,36
+Male,7,121.9,22.9,50.5,tennis,54
+Male,8,128,25.63,56.5,"bicycling, general",66
+Male,8,128,25.63,56.5,"walking, for pleasure",30
+Male,8,128,25.63,56.5,"jogging, general",60
+Male,8,128,25.63,56.5,"running, 4 mph (15 min/mile)",51
+Male,8,128,25.63,56.5,"swimming, general",120
+Male,8,128,25.63,56.5,"rope skipping, general",105
+Male,8,128,25.63,56.5,"badminton, general",48
+Male,8,128,25.63,56.5,cricket,42
+Male,8,128,25.63,56.5,tennis,63
+Male,9,133.3,28.58,63,"bicycling, general",78
+Male,9,133.3,28.58,63,"walking, for pleasure",36
+Male,9,133.3,28.58,63,"jogging, general",72
+Male,9,133.3,28.58,63,"running, 4 mph (15 min/mile)",63
+Male,9,133.3,28.58,63,"swimming, general",141
+Male,9,133.3,28.58,63,"rope skipping, general",126
+Male,9,133.3,28.58,63,"badminton, general",57
+Male,9,133.3,28.58,63,cricket,48
+Male,9,133.3,28.58,63,tennis,75
+Male,10,138.4,32,70.5,"bicycling, general",90
+Male,10,138.4,32,70.5,"walking, for pleasure",42
+Male,10,138.4,32,70.5,"jogging, general",84
+Male,10,138.4,32,70.5,"running, 4 mph (15 min/mile)",72
+Male,10,138.4,32,70.5,"swimming, general",165
+Male,10,138.4,32,70.5,"rope skipping, general",147
+Male,10,138.4,32,70.5,"badminton, general",66
+Male,10,138.4,32,70.5,cricket,57
+Male,10,138.4,32,70.5,tennis,87
+Male,11,143.5,35.6,78.5,"bicycling, general",105
+Male,11,143.5,35.6,78.5,"walking, for pleasure",48
+Male,11,143.5,35.6,78.5,"jogging, general",96
+Male,11,143.5,35.6,78.5,"running, 4 mph (15 min/mile)",84
+Male,11,143.5,35.6,78.5,"swimming, general",192
+Male,11,143.5,35.6,78.5,"rope skipping, general",171
+Male,11,143.5,35.6,78.5,"badminton, general",78
+Male,11,143.5,35.6,78.5,cricket,66
+Male,11,143.5,35.6,78.5,tennis,102
+Male,12,149.1,39.92,88,"bicycling, general",123
+Male,12,149.1,39.92,88,"walking, for pleasure",57
+Male,12,149.1,39.92,88,"jogging, general",114
+Male,12,149.1,39.92,88,"running, 4 mph (15 min/mile)",99
+Male,12,149.1,39.92,88,"swimming, general",225
+Male,12,149.1,39.92,88,"rope skipping, general",204
+Male,12,149.1,39.92,88,"badminton, general",90
+Male,12,149.1,39.92,88,cricket,81
+Male,12,149.1,39.92,88,tennis,120
+Male,13,156.2,45.36,100,"bicycling, general",147
+Male,13,156.2,45.36,100,"walking, for pleasure",69
+Male,13,156.2,45.36,100,"jogging, general",138
+Male,13,156.2,45.36,100,"running, 4 mph (15 min/mile)",120
+Male,13,156.2,45.36,100,"swimming, general",270
+Male,13,156.2,45.36,100,"rope skipping, general",243
+Male,13,156.2,45.36,100,"badminton, general",108
+Male,13,156.2,45.36,100,cricket,96
+Male,13,156.2,45.36,100,tennis,144
+Male,14,163.8,50.8,112,"bicycling, general",171
+Male,14,163.8,50.8,112,"walking, for pleasure",81
+Male,14,163.8,50.8,112,"jogging, general",159
+Male,14,163.8,50.8,112,"running, 4 mph (15 min/mile)",138
+Male,14,163.8,50.8,112,"swimming, general",318
+Male,14,163.8,50.8,112,"rope skipping, general",282
+Male,14,163.8,50.8,112,"badminton, general",126
+Male,14,163.8,50.8,112,cricket,108
+Male,14,163.8,50.8,112,tennis,168
+Male,15,170.1,56.02,123.5,"bicycling, general",198
+Male,15,170.1,56.02,123.5,"walking, for pleasure",90
+Male,15,170.1,56.02,123.5,"jogging, general",183
+Male,15,170.1,56.02,123.5,"running, 4 mph (15 min/mile)",156
+Male,15,170.1,56.02,123.5,"swimming, general",363
+Male,15,170.1,56.02,123.5,"rope skipping, general",321
+Male,15,170.1,56.02,123.5,"badminton, general",144
+Male,15,170.1,56.02,123.5,cricket,126
+Male,15,170.1,56.02,123.5,tennis,192
+Male,16,173.4,60.78,134,"bicycling, general",219
+Male,16,173.4,60.78,134,"walking, for pleasure",102
+Male,16,173.4,60.78,134,"jogging, general",207
+Male,16,173.4,60.78,134,"running, 4 mph (15 min/mile)",177
+Male,16,173.4,60.78,134,"swimming, general",405
+Male,16,173.4,60.78,134,"rope skipping, general",360
+Male,16,173.4,60.78,134,"badminton, general",162
+Male,16,173.4,60.78,134,cricket,141
+Male,16,173.4,60.78,134,tennis,213
+Male,17,175.2,64.41,142,"bicycling, general",240
+Male,17,175.2,64.41,142,"walking, for pleasure",111
+Male,17,175.2,64.41,142,"jogging, general",222
+Male,17,175.2,64.41,142,"running, 4 mph (15 min/mile)",192
+Male,17,175.2,64.41,142,"swimming, general",444
+Male,17,175.2,64.41,142,"rope skipping, general",393
+Male,17,175.2,64.41,142,"badminton, general",177
+Male,17,175.2,64.41,142,cricket,153
+Male,17,175.2,64.41,142,tennis,234
+Male,18,175.7,66.9,147.5,"bicycling, general",255
+Male,18,175.7,66.9,147.5,"walking, for pleasure",120
+Male,18,175.7,66.9,147.5,"jogging, general",240
+Male,18,175.7,66.9,147.5,"running, 4 mph (15 min/mile)",204
+Male,18,175.7,66.9,147.5,"swimming, general",468
+Male,18,175.7,66.9,147.5,"rope skipping, general",417
+Male,18,175.7,66.9,147.5,"badminton, general",186
+Male,18,175.7,66.9,147.5,cricket,162
+Male,18,175.7,66.9,147.5,tennis,249
+Male,19,176.5,68.95,152,"bicycling, general",267
+Male,19,176.5,68.95,152,"walking, for pleasure",123
+Male,19,176.5,68.95,152,"jogging, general",249
+Male,19,176.5,68.95,152,"running, 4 mph (15 min/mile)",213
+Male,19,176.5,68.95,152,"swimming, general",492
+Male,19,176.5,68.95,152,"rope skipping, general",438
+Male,19,176.5,68.95,152,"badminton, general",195
+Male,19,176.5,68.95,152,cricket,171
+Male,19,176.5,68.95,152,tennis,261
+Male,20,177,70.3,155,"bicycling, general",273
+Male,20,177,70.3,155,"walking, for pleasure",129
+Male,20,177,70.3,155,"jogging, general",258
+Male,20,177,70.3,155,"running, 4 mph (15 min/mile)",222
+Male,20,177,70.3,155,"swimming, general",507
+Male,20,177,70.3,155,"rope skipping, general",450
+Male,20,177,70.3,155,"badminton, general",204
+Male,20,177,70.3,155,cricket,177
+Male,20,177,70.3,155,tennis,270
