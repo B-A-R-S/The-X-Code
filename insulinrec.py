@@ -76,6 +76,7 @@ new_data = {'Weight (Kg)': weight,
             'High blood sugar correction dose': high_bg_correction_dose, 
             'Total CHO in a meal': total_cho, 
             'Total Daily insulin requirement': total_daily_insulin}
+
 # Make prediction for new data point
 X_new = pd.DataFrame([new_data])
 y_new = model.predict(X_new)
