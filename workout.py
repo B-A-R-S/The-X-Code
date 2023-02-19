@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 from sklearn.metrics import r2_score
 
-workout = pd.read_csv("Workout Dataset New.csv")
+workout = pd.read_csv("Book1New.csv")
 workout.head()
 
 # Checking for null values
@@ -27,7 +27,7 @@ print(X)
 print(Y)
 
 # Divide the data into train and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
 # Have a glance at the shape of the train and test sets
 print(X_train.shape)
@@ -40,7 +40,7 @@ print(y_test.shape)
 #scaler = MinMaxScaler()
 
 #Applying scaler() to all the columns except Gender and Exercise type 
-#num_vars1 = ['Gender','Age', 'Height', 'Weight in Kg', 'No.of calories burnt per 30 minutes']
+#num_vars1 = ['Gender','Age', 'Height', 'Weight', 'No of calories burnt per 30 min']
 #X_train[num_vars1] = scaler.fit_transform(X_train[num_vars1])
 #num_vars2 = ['Exercise type']
 #y_train[num_vars2] = scaler.fit_transform(y_train[num_vars2])
@@ -87,9 +87,36 @@ calories = int(input("Enter the number of calories you need to burn per 30 minut
 user_input = np.array([gender, age, height, weight, calories]).reshape(1, -1)
 user_input_df = pd.DataFrame(user_input, columns=X_train.columns)
 predicted_exercise = regressor.predict(user_input_df)
+exercise_name = ""
+if (1 < predicted_exercise < 1.5):
+    exercise_name = "Bicycling, General"
+elif (1.5 < predicted_exercise < 2.5):
+    exercise_name = "walking, for pleasure"
+elif (2.5 < predicted_exercise < 3.5):
+    exercise_name = "jogging, general"
+elif (3.5 < predicted_exercise < 4.5):
+    exercise_name = "running, 4 mph (15 min/mile)"
+elif (4.5 < predicted_exercise < 5.5):
+    exercise_name = "swimming, general"  
+elif (5.5 < predicted_exercise < 6.5):
+    exercise_name = "rope skipping, general"  
+elif (6.5 < predicted_exercise < 7.5):
+    exercise_name = "badminton, general"
+elif (7.5 < predicted_exercise < 8.5):
+    exercise_name = "cricket"
+elif (8.5 < predicted_exercise < 9.5):
+    exercise_name = "tennis"
+elif (9.5 < predicted_exercise < 10.5):
+    exercise_name = "Home exercise, General"
+elif (10.5 < predicted_exercise < 11.5):
+    exercise_name = "Stretching, mild"
+elif (11.5 < predicted_exercise < 12.5):
+    exercise_name = "Slide board exercise, General"
+
+
 
 # Print the predicted exercise
-print("Recommended exercise type:", predicted_exercise[0])
+print("Recommended exercise type for 30 minutes : ", exercise_name)
 
 
 
