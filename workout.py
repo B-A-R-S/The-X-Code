@@ -27,7 +27,7 @@ print(X)
 print(Y)
 
 # Divide the data into train and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
 
 # Have a glance at the shape of the train and test sets
 print(X_train.shape)
@@ -35,11 +35,11 @@ print(X_test.shape)
 print(y_train.shape)
 print(y_test.shape)
 
-# Re-scaling the features
+#Re-scaling the features
 #from sklearn.preprocessing import MinMaxScaler
 #scaler = MinMaxScaler()
 
-# Applying scaler() to all the columns except Gender and Exercise type 
+#Applying scaler() to all the columns except Gender and Exercise type 
 #num_vars1 = ['Gender','Age', 'Height', 'Weight in Kg', 'No.of calories burnt per 30 minutes']
 #X_train[num_vars1] = scaler.fit_transform(X_train[num_vars1])
 #num_vars2 = ['Exercise type']
@@ -76,7 +76,20 @@ print('Root Mean Squarred Error:', np.sqrt(metrics.mean_squared_error(y_test, y_
 score = r2_score(y_test, y_pred)
 print('r2 score:', score)
 
+# Get user input for the independent variables
+age = int(input("Enter your age: "))
+gender = int(input("Enter your gender (1 for female, 2 for male): "))
+height = float(input("Enter your height in cm"))
+weight = float(input("Enter your weight in kg"))
+calories = int(input("Enter the number of calories you need to burn per 30 minutes: "))
 
+# Make predictions on the user input
+user_input = np.array([gender, age, height, weight, calories]).reshape(1, -1)
+user_input_df = pd.DataFrame(user_input, columns=X_train.columns)
+predicted_exercise = regressor.predict(user_input_df)
+
+# Print the predicted exercise
+print("Recommended exercise type:", predicted_exercise[0])
 
 
 
