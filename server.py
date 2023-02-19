@@ -27,11 +27,11 @@ def send_msg(client, msg):         # To send message to a single client
     client.sendall(msg.encode())
 
 
-def send_msg_all(msg):             # To send any new message to all the clients 
+#def send_msg_all(msg):             # To send any new message to all the clients 
     
-    for user in active:
+    #for user in active:
 
-        send_msg(user[1], msg)
+        #send_msg(user[1], msg)
 
 
 def c_handler(client):             # To handle client
