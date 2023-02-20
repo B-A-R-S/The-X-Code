@@ -35,6 +35,8 @@ y_pred = model.predict(X_test)
 print("R-squared:", r2_score(y_test, y_pred))
 
 # Ask the user to input values for a new data point
+#should extract the user account details for weight and target
+
 weight = float(input("Enter weight (in Kg): "))
 total_cho = float(input("Enter total CHO in a meal: "))
 current_bg = float(input("Enter current BG level: "))
@@ -76,7 +78,6 @@ new_data = {'Weight (Kg)': weight,
             'High blood sugar correction dose': high_bg_correction_dose, 
             'Total CHO in a meal': total_cho, 
             'Total Daily insulin requirement': total_daily_insulin}
-
 # Make prediction for new data point
 X_new = pd.DataFrame([new_data])
 y_new = model.predict(X_new)
@@ -87,7 +88,17 @@ print("Predicted total meal insulin dose: {:.2f}".format(y_new[0]))
 # Ask the user if they want to print additional features
 print_additional_features = input("Do you want to print additional features? (yes or no): ")
 if print_additional_features.lower() == 'yes':
- print("Total Daily insulin requirement:", total_daily_insulin)
- print("Basal (40-50%) units:", basal_units)
- print("CHO insulin dose:", cho_insulin_dose)
- print("High blood sugar correction dose:", high_bg_correction_dose)
+ print("Total Daily insulin requirement: {:.2f}".format(total_daily_insulin))
+ print("Basal (40-50%) units: {:.2f}".format(basal_units))
+ print("CHO insulin dose: {:.2f}".format(cho_insulin_dose))
+ print("High blood sugar correction dose: {:.2f}".format(high_bg_correction_dose))
+
+
+
+
+
+#if print_additional_features.lower() == 'yes':
+ #print("Total Daily insulin requirement:", total_daily_insulin)
+ #print("Basal (40-50%) units:", basal_units)
+ #print("CHO insulin dose:", cho_insulin_dose)
+ #print("High blood sugar correction dose:", high_bg_correction_dose)
