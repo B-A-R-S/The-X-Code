@@ -87,7 +87,7 @@ print("Predicted total meal insulin dose: {:.2f}".format(y_new[0]))
 # Ask the user if they want to print additional features
 print_additional_features = input("Do you want to print additional features? (yes or no): ")
 if print_additional_features.lower() == 'yes':
- print("Total Daily insulin requirement:", total_daily_insulin)
- print("Basal (40-50%) units:", basal_units)
- print("CHO insulin dose:", cho_insulin_dose)
- print("High blood sugar correction dose:", high_bg_correction_dose)
+ print("Total Daily insulin requirement: {:.2f}".format(total_daily_insulin))
+ print("Basal (40-50%) units: {:.2f}".format(basal_units))
+ print("CHO insulin dose: {:.2f}".format(cho_insulin_dose))
+ print("High blood sugar correction dose: {:.2f}".format(high_bg_correction_dose))
