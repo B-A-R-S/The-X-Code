@@ -35,6 +35,8 @@ y_pred = model.predict(X_test)
 print("R-squared:", r2_score(y_test, y_pred))
 
 # Ask the user to input values for a new data point
+#should extract the user account details for weight and target
+
 weight = float(input("Enter weight (in Kg): "))
 total_cho = float(input("Enter total CHO in a meal: "))
 current_bg = float(input("Enter current BG level: "))
