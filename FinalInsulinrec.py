@@ -47,11 +47,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Having a look at the coefficients that the model has chosen
-v = pd.DataFrame(model.coef_,index=['Co-efficient']).transpose()
-w = pd.DataFrame(X.columns, columns=['Attribute'])
-
-# Concatenating the DataFrames to compare
-coeff_df = pd.concat([w,v], axis=1, join='inner')
+coeff_df = pd.DataFrame({'Attribute': X.columns, 'Co-efficient': model.coef_})
 print(coeff_df)
 
 # Print the intercept of the model
