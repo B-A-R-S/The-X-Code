@@ -26,57 +26,58 @@ export default function MealRecommendation() {
     // Show recommended calorie and carbohydrate amounts if the user chooses to do so
     setShowRecommended(true);
      // Set recommended calorie and carbohydrate amounts
-    //Calculate the "Recommended Calorie" using a Mifflin St Jeor equations
-if (Gender == '2'){
-        bmr = 10 * Weight + 6.25 * Height - 5 * Age + 5
-}else {
-        bmr = 10 * Weight + 6.25 * Height - 5 * Age - 161
-}
-
-if (Level_of_Activity == '1') {
-  rec_cal = bmr * 1.375;
-} else if (Level_of_Activity == '2') {
-  rec_cal = bmr * 1.55;
-} else {
-  rec_cal = bmr * 1.725;
-}
-     
-
-//Calculate "Recommended Total Carbohydrate(g)" using the American Diabetes Association (ADA) Recommendations
-rec_tot_carb = rec_cal * 0.45  * 0.25
-
-//Calculate "Recommended Carbohydrate (g)" using the American Diabetes Association (ADA) Recommendations
-if (Age >= 3){
-    if (Meal_Type in [1, 3, 5]){
-      carb_percent = 0.30;
-    }else{
-      carb_percent = 0.05;
+      //Calculate the "Recommended Calorie" using a Mifflin St Jeor equation
+    let bmr;
+    if (gender === '2') {
+      bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+    } else {
+      bmr = 10 * weight + 6.25 * height - 5 * age - 161;
     }
-}else if (Age >= 4 && Age <= 8){
-    if (Meal_Type in [1, 3, 5]){
+
+    let rec_cal;
+    if (activityLevel === '1') {
+      rec_cal = bmr * 1.375;
+    } else if (activityLevel === '2') {
+      rec_cal = bmr * 1.55;
+    } else {
+      rec_cal = bmr * 1.725;
+    }
+
+    //Calculate "Recommended Total Carbohydrate(g)" using the American Diabetes Association (ADA) Recommendations
+    let rec_tot_carb = rec_cal * 0.45 * 0.25;
+
+    //Calculate "Recommended Carbohydrate (g)" using the American Diabetes Association (ADA) Recommendations
+    let carb_percent;
+    if (age >= 3) {
+      if (mealType in [1, 3, 5]) {
+        carb_percent = 0.30;
+      } else {
+        carb_percent = 0.05;
+      }
+    } else if (age >= 4 && age <= 8) {
+      if (mealType in [1, 3, 5]) {
         carb_percent = 0.29;
-    }else{
+      } else {
         carb_percent = 0.07;
-    }
-}else if (Age >= 9 && Age <= 13){
-    if (Meal_Type in [1, 3, 5]){
+      }
+    } else if (age >= 9 && age <= 13) {
+      if (mealType in [1, 3, 5]) {
         carb_percent = 0.28;
-    }else{
+      } else {
         carb_percent = 0.08;
-    }
-}else {
-    if (Meal_Type in [1, 3, 5]){
+      }
+    } else {
+      if (mealType in [1, 3, 5]) {
         carb_percent = 0.26;
-    }else{
+      } else {
         carb_percent = 0.11;
+      }
     }
-}
 
-    
-rec_carb = rec_tot_carb * carb_percent
-      setRecCal(rec_cal);
-      setRecTotCarb(rec_tot_carb);
-      setRecCarb(rec_carb);
+    let rec_carb = rec_tot_carb * carb_percent;
+    setRecCal(rec_cal);
+    setRecTotCarb(rec_tot_carb);
+    setRecCarb(rec_carb);
   };
 
   return (
