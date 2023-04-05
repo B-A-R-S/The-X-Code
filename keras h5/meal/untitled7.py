@@ -39,7 +39,7 @@ print(meals_df.describe())
 print(meals_df)
 
 # Select the predictor variables and the response variable
-X = meals_df[['Age', 'Gender', 'Average Weight (Kg)', 'Average Height (cm)', 'Level of Activity', 'Meal Type', 'Recommended Calorie ', 'Recommended Total Carbohydrate(g)', 'Recommended Carbohydrate (g)', 'Menu No',]]
+X = meals_df[['Age', 'Gender', 'Average Weight (Kg)', 'Average Height (cm)', 'Level of Activity', 'Meal Type', 'Menu No', 'Recommended Calorie ', 'Recommended Total Carbohydrate(g)', 'Recommended Carbohydrate (g)', ]]
 y = meals_df['Serving Size']
 
 print("****Checking the independent variables****")
@@ -175,15 +175,16 @@ rec_carb = rec_tot_carb * carb_percent
 #####Not Needed for the selected  one
 # Create a dictionary for the new data point with the calculated features
 new_data = {'Age': Age, 
-            'Gender': Gender, 
-            'Level of Activity': Level_of_Activity, 
+            'Gender': Gender,
             'Average Weight (Kg)': Weight, 
-            'Average Height (cm)': Height, 
+            'Average Height (cm)': Height,  
+            'Level of Activity': Level_of_Activity, 
+            'Meal Type': Meal_Type, 
+            'Menu No': Menu_No,
             'Recommended Calorie': rec_cal, 
             'Recommended Total Carbohydrate(g)': rec_tot_carb, 
-            'Meal Type': Meal_Type, 
-            'Recommended Carbohydrate (g)': rec_carb, 
-            'Menu No': Menu_No}
+            'Recommended Carbohydrate (g)': rec_carb}
+           
 
 
 
