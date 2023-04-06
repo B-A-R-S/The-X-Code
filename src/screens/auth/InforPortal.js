@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 
 const InforPortal = () => {
+  const navigation = useNavigation()
+    
   return (
     <SafeAreaView>
         <View style = {styles.upper}>
-            <Text style = {styles.infoText}>InforPortal</Text>
+            <Text style = {styles.infoText}>Knowledge Portal</Text>
         </View>
 
         <View style = {styles.bottom}>
@@ -58,7 +61,7 @@ const styles = StyleSheet.create({
         height: 101,
         left: 0,
         top: 0,
-        backgroundColor: '#F22F5E',
+        backgroundColor: '#0782F9',
     },
 
     infoText:{
@@ -84,7 +87,7 @@ const styles = StyleSheet.create({
         top: 126,
         borderRadius: 25,
         borderWidth: 3,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
     },
 
     space1:{
@@ -94,7 +97,7 @@ const styles = StyleSheet.create({
         height: 112,
         left: 52,
         top: 218,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
         borderWidth:2,
         borderRadius: 15,
     },
@@ -106,7 +109,7 @@ const styles = StyleSheet.create({
         height: 112,
         left: 230,
         top: 218,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
         borderWidth:2,
         borderRadius: 15,
     },
@@ -118,7 +121,7 @@ const styles = StyleSheet.create({
         height: 112,
         left: 52,
         top: 380,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
         borderWidth:2,
         borderRadius: 15,
     },
@@ -130,7 +133,7 @@ const styles = StyleSheet.create({
         height: 112,
         left: 230,
         top: 380,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
         borderWidth:2,
         borderRadius: 15,
     },
@@ -142,7 +145,7 @@ const styles = StyleSheet.create({
         height: 112,
         left: 52,
         top: 541,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
         borderWidth:2,
         borderRadius: 15,
     },
@@ -154,7 +157,7 @@ const styles = StyleSheet.create({
         height: 112,
         left: 230,
         top: 541,
-        borderColor:'#F22F5E',
+        borderColor:'#0782F9',
         borderWidth:2,
         borderRadius: 15,
     }
