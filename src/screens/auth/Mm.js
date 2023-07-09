@@ -27,6 +27,7 @@ export default function MealRecommendation() {
     console.log(yNew);
   }, [yNew]);
 
+
   const calculateServings = async () => {
     // Calculate recommended servings based on user details
     // ...
@@ -36,8 +37,8 @@ export default function MealRecommendation() {
 
     // Show recommended calorie and carbohydrate amounts if the user chooses to do so
     setShowRecommended(true);
-     // Set recommended calorie and carbohydrate amounts
-      //Calculate the "Recommended Calorie" using a Mifflin St Jeor equation
+    // Set recommended calorie and carbohydrate amounts
+    //Calculate the "Recommended Calorie" using a Mifflin St Jeor equation
     let bmr;
     if (gender === '2') {
       bmr = 10 * weight + 6.25 * height - 5 * age + 5;
@@ -99,7 +100,7 @@ export default function MealRecommendation() {
       "Meal_Type": Number(mealType),
       "Menu_No": Number(menuNo)
     };
-    
+
     const data = {
       input_data : input,
     };
@@ -116,7 +117,7 @@ export default function MealRecommendation() {
           setYNew(tempString);
           console.log("Code running..")
           console.log('tempString:', tempString);
-          Alert.alert("Predicted Serving Size:", tempString, [
+          Alert.alert("Here is your recommendation", tempString, [
             { text: "Got it" },
           ]);
 
@@ -126,9 +127,10 @@ export default function MealRecommendation() {
       }    
   };
 
+
   return (
     <ScrollView style={styles.container}>
-       <AppHeader/>
+      <AppHeader />
       <Text style={styles.title}>Meal Recommendation</Text>
       <Text style={styles.subtitle}>Please enter your details:</Text>
       <TextInput
@@ -166,80 +168,29 @@ export default function MealRecommendation() {
         onChangeText={setActivityLevel}
         keyboardType="numeric"
       />
-      <TextInput
-        style={styles.input}
-        placeholder="Enter your meal type (1 = Breakfast / 2 = Morning Snack / 3 = Lunch / 4 = Afternoon Snack / 5 = Dinner)"
-        value={mealType}
-        onChangeText={setMealType}
-        keyboardType="numeric"
-    />
-      
-      <View style={styles.screen}>
-      <Text style={styles.input}>Menu No</Text>
       <Picker
         style={{ ...styles.picker }}
         selectedValue={mealType}
-        onValueChange={(itemValue) => setMenuNo(itemValue)}
+        onValueChange={(itemValue) => setMealType(itemValue)}
       >
-          
-         <Picker.Item label="Breakfast" value="Unknown" />
-        <Picker.Item label="Kiribath -1 slice " value="1" />
-        <Picker.Item label="Pol Roti -1 piece " value="2" />
-        <Picker.Item label="Pittu -1 piece " value="3" />
-        <Picker.Item label="Mung (Green gram) -1 cup " value="4" />
-        <Picker.Item label="Kadala (Chickpea) -1 cup " value="5" />
-        <Picker.Item label="Roasted bread with fish -1 piece " value="6" />
-        <Picker.Item label="Uppuma -1 cup " value="7" />
-         
-         <Picker.Item label="Morning Snack" value="Unknown" />
-        <Picker.Item label="Low fat milk -1 cup " value="8" />
-        <Picker.Item label="Kola Kanda -1 glass " value="9" />
-        <Picker.Item label="Yogurt -1 cup " value="10" />
-        <Picker.Item label="Avocado -1/2 medium " value="11" />
-        <Picker.Item label="Fruit juice -1 glass " value="12" />
-        <Picker.Item label="Dark chocolate -1 piece " value="13" />
-        <Picker.Item label="Banana -1 medium " value="14" />
 
-        <Picker.Item label="Lunch" value="Unknown" />
-        <Picker.Item label="Red rice, chicken curry, beetroot curry, and gotukola sambol -1 plate" value="15" />
-        <Picker.Item label="Red rice, fish curry, green bean curry, and tomato and onion sambol -1 plate" value="16" />
-        <Picker.Item label="Red rice, jackfruit curry, eggplant moju, and cabbage mallung -1 plate" value="17" />
-        <Picker.Item label="Red rice, mung bean curry, pumpkin curry, and cucumber salad -1 plate" value="18" />
-        <Picker.Item label="Chicken curry, dhal curry, and mixed vegetable curry with rice -1 plate" value="19" />
-        <Picker.Item label="Fish curry, beetroot curry, and okra curry with rice -1 plate" value="20" />
-        <Picker.Item label="Potato curry, jackfruit curry, and green bean curry with rice -1 plate" value="21" />
-
-        <Picker.Item label="Afternoon Snack" value="Unknown" />
-        <Picker.Item label="Orange -1 medium" value="22" />
-        <Picker.Item label="Guava -1 medium" value="23" />
-        <Picker.Item label="Apple -1 medium" value="24" />
-        <Picker.Item label="Peanuts -25 g" value="25" />
-        <Picker.Item label="Veralu -4-5 fruits" value="26" />
-        <Picker.Item label="Watermelon -1 cup" value="27" />
-        <Picker.Item label="Ambarella -1 medium" value="28" />
-
-        <Picker.Item label="Dinner" value="Unknown" />
-        <Picker.Item label="String hoppers with fish -2 hoppers" value="29" />
-        <Picker.Item label="Hoppers with lunu miris -1 hopper" value="30" />
-        <Picker.Item label="Dosa with sambar -1 dosa" value="31" />
-        <Picker.Item label="Bread with dhal curry -1 slice" value="32" />
-        <Picker.Item label="Kurakkan thalapa with chicken curry -1 piece" value="33" />
-        <Picker.Item label="Egg noodles -1 cup" value="34" />
-        <Picker.Item label="Chapathi with gravy -1 piece" value="35" />
-
+        <Picker.Item label="Select Meal Type" value="Unknown" />
+        <Picker.Item label="Breakfast" value="1" />
+        <Picker.Item label="Snack" value="2" />
+        <Picker.Item label="Lunch" value="3" />
+        <Picker.Item label="Dinner" value="4" />
+        <Picker.Item label="Dessert" value="5" />
       </Picker>
-        <Text style={styles.text}
-        onChangeText={setMenuNo}
-        >You selected: {menuNo}</Text>
-    </View>
 
-
-      <Button title="Recommend my servings" onPress={calculateServings} />
       
-      {yNew !== '' && (
-        <Text style={styles.recommendation_y}> Predicted Serving Size: {yNew} </Text>
-      )}
-       <View style={styles.switchContainer}>
+      <TextInput
+        style={styles.input}
+        placeholder="Enter menu number"
+        value={menuNo}
+        onChangeText={setMenuNo}
+        keyboardType="numeric"
+      />
+      <View style={styles.switchContainer}>
         <Text style={styles.switchText}>Show recommended calorie and carbohydrate amounts</Text>
         <Switch
           style={styles.switch}
@@ -247,19 +198,30 @@ export default function MealRecommendation() {
           onValueChange={() => setShowRecommended(!showRecommended)}
         />
       </View>
+      <Button
+        title="Calculate"
+        onPress={calculateServings}
+      />
+      {yNew !== '' && (
+        <Text style={styles.recommendation_y}> {yNew} </Text>
+      )}
       {showRecommended && (
-        <>
-          <Text style={styles.subtitle}>Recommended Daily Calorie Intake:</Text>
-          <Text style={styles.description}>{recCal}</Text>
-          <Text style={styles.subtitle}>Recommended Total Carbohydrate Intake:</Text>
-          <Text style={styles.description}>{recTotCarb}</Text>
-          <Text style={styles.subtitle}>Recommended Carbohydrate Intake Per Meal:</Text>
-          <Text style={styles.description}>{recCarb}</Text>
-        </>
+        <View style={styles.recommendationContainer}>
+          <Text style={styles.recommendation}>
+            Recommended Calorie: {recCal.toFixed(2)}
+          </Text>
+          <Text style={styles.recommendation}>
+            Recommended Total Carbohydrate (g): {recTotCarb.toFixed(2)}
+          </Text>
+          <Text style={styles.recommendation}>
+            Recommended Carbohydrate (g): {recCarb.toFixed(2)}
+          </Text>
+        </View>
       )}
     </ScrollView>
-  );
+  );  
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -299,6 +261,11 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  recommendation_y:{
+    fontSize:18,
+    fontStyle:'bold',
   },
 
 });

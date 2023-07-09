@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {  Text, Modal, Alert, SafeAreaView, ScrollView, View , StyleSheet, TextInput,Pressable, TouchableOpacity} from 'react-native';
+// import Basal from './../auth/Basal';
+// import Bolus from './../auth/Bolus';
 import AppHeader from './AppHeader';
 
-
-
-// export let mass = 0;
+export let mass = 0;
 
 const  Insulin =() => {
   const [result, setResult] = useState('');
@@ -15,27 +15,17 @@ const  Insulin =() => {
   const [number2, onChangeNumber2] = React.useState('');
   const [number3, onChangeNumber3] = React.useState('');
 
-  const [recommendation, setRecommendation] = useState();
-
-
-
-
   const onPresscalculate = () => {
     const sum = parseInt(number) * 0.55
     setResult(sum.toString());
-    const mass = parseInt(number);
+    mass = parseInt(number);
   };
-
 
     const [modalVisibleBas, setModalVisibleBas] = useState(false);
     const [bolus, setBolResult] = useState('');
     const [modalVisibleBos, setModalVisibleBos] = useState(false);
 
-    useEffect(() => {
-      console.log(bolus);
-    }, [bolus]);
-
-    const sum = number * 0.55
+    const sum = mass * 0.55
   
     // Calculate "Basal (40-50%) units" using the formula you provided
     const basal_units = sum * (50 / 100)
@@ -43,7 +33,7 @@ const  Insulin =() => {
     //-------------------------------//
 
     // Calculate "Total Daily Insulin dosage"
-    const total_daily_insulin = number * 0.55
+    const total_daily_insulin = mass * 0.55
     
     // Calculate "Insulin sensitivity Factor" using the 1888 rule
     const insulin_sensitivity_factor = 1800 / total_daily_insulin
@@ -62,37 +52,14 @@ const  Insulin =() => {
 
 
     const handleCalculate = async () => {
-      const input1 = {
-        "weight": Number(number), 
-        "total_cho": Number(number1), 
-        "current_bg": Number(number2), 
-        "target_bg": Number(number3)
-      };
-
-      const data = {
-        input_data : input1,
-      };
-
+      const input1 = [Number(35), Number(insulin_sensitivity_factor), Number(number2), Number(number3), Number(bolas_units), Number(insulin_carb_ratio), Number(cho_insulin_dose), Number(high_bg_correction_dose), Number(number1), Number(total_daily_insulin)];
+      
       try {
-          await axios.post('https://us-central1-t1-diabetes-management-68efb.cloudfunctions.net/predict_dose',data,
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }).then((res) => {
-            const tempString = JSON.stringify(res.data.prediction);
-            setRecommendation(tempString);
-            console.log("Code running..")
-            console.log(recommendation);
-            setBolResult(tempString);
+          const response = await axios.post('https://us-central1-t1-diabetes-management-68efb.cloudfunctions.net/predict_insulin', { "int_array": input1 });
+          setBolResult(response.data);
 
-            Alert.alert("Here is your recommendation", tempString, [
-              { text: "Got it" },
-            ]);
-            
-          });
-
-      } catch (error) {
+          
+        } catch (error) {
           console.log(error);
         }    
     };
@@ -206,23 +173,20 @@ const  Insulin =() => {
                 placeholder="Enter Target Blood Glucos Levels: "
                 keyboardType="numeric"
               /> 
-
-              {bolus ? <Text >Bolus Dose is :    {bolus}</Text> : null} 
-              
-              <Pressable
-                style={[styles.buttonBas_Bos, styles.buttonClose]}
-                onPress={handleCalculate}>         
-                <Text style={styles.textStyleBas_Bol}>Calculate</Text>
-              </Pressable>
-              {/* {bolus !== '' && (
-                <Text style={styles.recommendation_y}> {bolus} </Text>
-              )} */}
+  
+              {bolus ? <Text >Bolus Dose is :    {bolus}</Text> : null}   
+  
+                <Pressable
+                  style={[styles.buttonBas_Bos, styles.buttonClose]}
+                  onPress={handleCalculate}>         
+                  <Text style={styles.textStyleBas_Bol}>Calculate</Text>
+                </Pressable>
                 
-              <Pressable
-                style={[styles.buttonBas_Bos, [styles.buttonClose, {marginTop:15}]]}
-                onPress={() => setModalVisibleBos(!modalVisibleBos)}>
-                <Text style={styles.textStyleBas_Bol}>Close</Text>
-              </Pressable>
+                <Pressable
+                  style={[styles.buttonBas_Bos, [styles.buttonClose, {marginTop:15}]]}
+                  onPress={() => setModalVisibleBos(!modalVisibleBos)}>
+                  <Text style={styles.textStyleBas_Bol}>Close</Text>
+                </Pressable>
               
             </View>
           </View>
@@ -362,10 +326,6 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
     padding: 10,
-  },
-  recommendation_y:{
-    fontSize:18,
-    fontStyle:'bold',
   },
 
 });

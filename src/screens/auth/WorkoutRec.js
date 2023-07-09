@@ -119,9 +119,9 @@ export default function WorkoutRec() {
   };
 
   const handleButtonPress = async () => {
-    // if (!validateInput()) {
-    //     return;
-    // }
+    if (!validateInput()) {
+        return;
+    }
 
     const input1 = [
       mapGenderToNumber(text),
@@ -149,23 +149,16 @@ export default function WorkoutRec() {
         .then((res) => {
           const tempString = JSON.stringify(res.data.response);
           setRecommendation(tempString);
-          console.log("running..")
+          console.log("Code running..")
           console.log(recommendation);
-          
-          if (recommendation) {
-            Alert.alert("Here is your recommendation", recommendation, [
-              { text: "Got it" },
-            ]);
-          }
+
+          Alert.alert("Here is your recommendation", tempString, [
+            { text: "Got it" },
+          ]);
         });
     } catch (error) {
       console.log(error);
     } 
-    // if (recommendation) {
-    //   Alert.alert("Here is your recommendation", recommendation, [
-    //     { text: "Got it" },
-    //   ]);
-    // }
   };
 
   return (
@@ -219,10 +212,6 @@ export default function WorkoutRec() {
           placeholder="Input the no.of calories you want to burn"
           keyboardType="numeric"
         />
-
-        <View style={styles.description}>
-          <Text>{recommendation}</Text>
-        </View>
       </View>
 
       <View style={{ flex: 1 }}>
@@ -252,12 +241,5 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
     padding: 10,
-  },
-
-  description: {
-    fontSize: 16,
-    textAlign: "left",
-    marginTop: 10,
-    marginBottom: 20,
   },
 });

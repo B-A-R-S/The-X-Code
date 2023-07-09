@@ -10,7 +10,6 @@ import OnboardingScreen from "./src/screens/auth/OnboardingScreen";
 import PrivacyPolicy from "./src/screens/auth/PrivacyPolicy";
 // import WorkoutRecJson from "./src/screens/auth/WorkoutRecJson"
 import RecommendationsMenu from "./src/screens/auth/RecommendationsMenu";
-import MealRecommendationNew from "./src/screens/auth/MealRecommendationNew";
 import InforPortal from "./src/screens/auth/InforPortal";
 import ReadData from "./src/screens/auth/ReadData";
 import DisplayData from "./src/screens/auth/DisplayData";
@@ -22,6 +21,7 @@ import Signup from './src/screens/auth/Signup';
 import Parents_chat from './src/screens/auth/Parents_chat';
 import Splash from './src/screens/auth/Splash'
 import Insulin from './src/screens/auth/Insulin'
+import MealRecommendationNew from "./src/screens/auth/MealRecommendationNew";
 
 
 // import Login_1 from "./src/screens/auth/Login_1";
@@ -67,7 +67,6 @@ export default function App() {
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy}/>
         <Stack.Screen name="RecommendationsMenu" component={RecommendationsMenu}/>
-        <Stack.Screen name="MealRecommendationNew" component={MealRecommendationNew}/>
         <Stack.Screen name="WorkoutRec" component={WorkoutRec}/>
         <Stack.Screen name="InforPortal" component={InforPortal} /> 
         <Stack.Screen name="ReadData" component={ReadData} />
@@ -79,6 +78,7 @@ export default function App() {
         <Stack.Screen name='ChatLogin' component={ChatLogin} />
         <Stack.Screen name='Signup' component={Signup} />
         <Stack.Screen name='Insulin' component={Insulin} />
+        <Stack.Screen name="MealRecommendationNew" component={MealRecommendationNew}/>
 
         
 
